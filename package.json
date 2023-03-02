@@ -1,0 +1,25 @@
+{
+  "name": "bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "fajar eka pratama",
+  "license": "MIT",
+
+  "scripts": {
+    "cy:open":"cypress open",
+    "cy:run":"cypress run"
+  },
+
+  "dependencies": {
+    "@cucumber/cucumber": "^8.10.0",
+    "cypress": "^12.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "2.8.1"
+  },
+
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitons": "cypress/support/step_definitions"
+  }
+}
